@@ -111,7 +111,14 @@ return (
         </TouchableOpacity>
     </View>
     </View>
-    <Text style={styles.story}>OUR STORY</Text>
+    <View style={styles.storyRow}>
+        <Text style={styles.story}>OUR STORY</Text>
+        <TouchableOpacity style={styles.sortIcons}>
+            <Icon name="sort"/>
+            <Icon name="list"/>
+        </TouchableOpacity>
+    </View>
+    
     <FlatList
         data={data}
         renderItem={renderItem}
@@ -143,11 +150,24 @@ headerIcons: {
     width: 70,
     justifyContent: 'space-between',
 },
+storyRow: {
+    alignItems:'center',
+    flexDirection:'row',
+},
+
+sortIcons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    // justifyContent:'space-between',
+    width: 100,
+    marginHorizontal:200,
+    margin:20,
+},
 story: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 30,
     marginVertical: 10,
-    alignSelf: 'center',
+    alignSelf: 'left',
+    left:23,
 },
 list: {
     alignItems: 'center',

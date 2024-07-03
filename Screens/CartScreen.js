@@ -54,7 +54,7 @@ const calculateTotal = () => {
     <View style={styles.checkoutContainer}>
       <View style={styles.totalContainer}>
         <Text style={styles.estimatedTotal}>EST. TOTAL</Text>
-        <Text style={styles.totalAmount}>${calculateTotal()}</Text>
+        <Text style={styles.totalAmount}>$240</Text>
       </View>
       <TouchableOpacity style={styles.checkoutButton}>
         <Icon name="shopping-bag" size={24} color="#fff" />
@@ -74,16 +74,16 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 130,
-    // paddingVertical: 10,
+    paddingHorizontal: 13,
+    justifyContent:'space-between',
   },
   logo: {
     alignSelf: 'center',
     marginVertical: 10,
+    marginHorizontal: 130,
   },
   title: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 30,
     marginVertical: 10,
     alignSelf: 'center',
   },
